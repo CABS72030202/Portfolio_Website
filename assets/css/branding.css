@@ -1,0 +1,55 @@
+/* GLOBAL STYLES === */
+
+/* === FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  /* === COLORS === */
+  --teal: #008080;
+  --orange: #FF7A00;
+  --green: #00760F;
+  --blue: #000080;
+  --success: #28a745;
+  --error: #FF0000;
+  --white: #ffffff;
+  --light-gray: #f6f6f6;
+  --gray: #606060;
+  --black: #000000;
+
+  /* === TITLES === */
+  --title-font: 'Roboto Condensed', sans-serif;
+  --title-color: var(--blue);
+  --title-size: clamp(2.5rem, 5vw, 3rem);
+  --title-align: center;
+  --title-margin: 0 0 1rem 0;
+
+  /* === SUBTITLES === */
+  --subtitle-font: 'Poppins', sans-serif;
+  --subtitle-color: var(--teal);
+  --subtitle-size: clamp(1.6rem, 3vw, 2rem);
+  --subtitle-align: center;
+  --subtitle-margin: 1rem 0 0.5rem 0;
+
+  --subtitle2-size: clamp(1.2rem, 2.5vw, 1.2rem);
+  --subtitle2-margin: -1rem 0 0.5rem 0;
+
+  /* === BODY === */
+  --body-font: 'Lato', sans-serif;
+  --body-color: var(--black);
+  --body-size: clamp(1rem, 2vw, 1.2rem);
+  --body-size-small: clamp(0.9rem, 2vw, 1rem);
+  --body-align: center;
+  --body-margin: 0 0 1rem 0;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --title-size: clamp(1.5rem, 6vw, 2rem);
+    --subtitle-size: clamp(1.1rem, 4vw, 1.3rem);
+    --subtitle2-size: clamp(1rem, 3vw, 1rem);
+    --body-size: clamp(0.9rem, 3vw, 1rem);
+    --body-size-small: clamp(0.8rem, 3vw, 0.9rem);
+  }
+}
