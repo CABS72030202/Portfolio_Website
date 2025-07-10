@@ -28,7 +28,7 @@ header > .container {
 header {
   padding: 0;
   position: relative;
-  background-color: var(--blue);
+  background-color: var(--col4);
   min-width: 350px;
 }
 
@@ -69,7 +69,7 @@ header {
 }
 
 .social-icon:hover {
-  color: var(--orange);
+  color: var(--col2);
   transform: scale(1.1);
 }
 
@@ -92,7 +92,7 @@ header {
 
 /* Main navigation styles */
 .main-nav {
-  background-color: var(--teal);
+  background-color: var(--col1);
   width: 100%;
 }
 
@@ -125,11 +125,11 @@ header {
 
 .main-nav a.current,
 .main-nav a.current:visited {
-  color: var(--orange);
+  color: var(--col2);
 }
 
 .main-nav a:hover {
-  color: var(--orange);
+  color: var(--col2);
 }
 
 /* Hero section */
@@ -229,7 +229,7 @@ header {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.75rem 2rem;
-  background: var(--orange);
+  background: var(--col2);
   color: var(--white);
   border: none;
   border-radius: 6px;
@@ -243,7 +243,7 @@ header {
 }
 
 .hero .btn:hover {
-  background: var(--blue);
+  background: var(--col4);
   color: var(--white);
 }
 
@@ -258,7 +258,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--blue);
+  background-color: var(--col4);
   min-width: 350px;
 }
 
@@ -284,7 +284,7 @@ footer {
 
 .footer-link:hover {
   text-decoration: underline;
-  color: var(--orange);
+  color: var(--col2);
 }
 
 /* Mobile layout: stack items and center */
@@ -300,8 +300,8 @@ footer {
 /* Language Toggle Button */
 #lang-toggle {
   background: var(--white);
-  color: var(--blue);
-  border: 2px solid var(--blue);
+  color: var(--col4);
+  border: 2px solid var(--col4);
   padding: 0.4rem 1rem;
   font-family: var(--subtitle-font);
   font-weight: 600;
@@ -310,9 +310,9 @@ footer {
 }
 
 #lang-toggle:hover {
-  background-color: var(--orange);
+  background-color: var(--col2);
   color: var(--white);
-  border-color: var(--orange);
+  border-color: var(--col2);
 }
 
 /* Responsive: Mobile styles */

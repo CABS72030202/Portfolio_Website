@@ -7,10 +7,10 @@
 
 :root {
   /* === COLORS === */
-  --teal: #008080;
-  --orange: #FF7A00;
-  --green: #00760F;
-  --blue: #000080;
+  --col1: #6A8D92;
+  --col2: #B39DDB;
+  --col3: #FF6F61;
+  --col4: #4B0082;
   --success: #28a745;
   --error: #FF0000;
   --white: #ffffff;
@@ -20,14 +20,14 @@
 
   /* === TITLES === */
   --title-font: 'Roboto Condensed', sans-serif;
-  --title-color: var(--blue);
+  --title-color: var(--col4);
   --title-size: clamp(2.5rem, 5vw, 3rem);
   --title-align: center;
   --title-margin: 0 0 1rem 0;
 
   /* === SUBTITLES === */
   --subtitle-font: 'Poppins', sans-serif;
-  --subtitle-color: var(--teal);
+  --subtitle-color: var(--col1);
   --subtitle-size: clamp(1.6rem, 3vw, 2rem);
   --subtitle-align: center;
   --subtitle-margin: 1rem 0 0.5rem 0;
