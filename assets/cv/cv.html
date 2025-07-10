@@ -1,234 +1,60 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sébastien Cabana – CV</title>
-  <style>
-    :root {
-      --primary: #9c27b0; /* Violet vif */
-      --accent: #ff9800;
-      --text: #222;
-      --bg: #fff;
-      --gray-bg: #f5f5f5;
-      --font-head: 'Segoe UI', sans-serif;
-      --font-body: 'Arial', sans-serif;
-    }
+<!-- FONTS -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
-    * {
-      box-sizing: border-box;
-    }
+<!-- CSS -->
+<link href='cv.css' rel='stylesheet' type='text/css'>
 
-    body {
-      font-family: var(--font-body);
-      background: var(--bg);
-      color: var(--text);
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      max-width: 1000px;
-      margin: auto;
-    }
+<!-- PAGE STUFF -->
+<div class="rela-block page">
+    <div class="rela-block top-bar">
+        <div class="caps name"><div class="abs-center">Kyle J Shanks</div></div>
+    </div>
+    <div class="side-bar">
+        <div class="mugshot">
+            <div class="logo">
+                <svg viewbox="0 0 80 80" class="rela-block logo-svg">
+                    <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z" stroke-width="2.5" fill="none"/>
+                </svg>
+                <p class="logo-text">sc</p>
+            </div>
+        </div>
+        <p>123 My Place Drive</p>
+        <p>Astoria, NY 11105</p>
+        <p>1-800-CALLPLZ</p>
+        <p>emailsareforsquares@gmail.com</p><br>
+        <p class="rela-block social twitter">Twitter stuff</p>
+        <p class="rela-block social pinterest">Pinterest things</p>
+        <p class="rela-block social linked-in">Linked-in man</p>
+        <p class="rela-block caps side-header">Expertise</p>
+        <p class="rela-block list-thing">HTML & CSS</p>
+        <p class="rela-block list-thing">JavaScript & jQuery</p>
+        <p class="rela-block list-thing">UI/UX Design</p>
+        <p class="rela-block list-thing">Problem Solving</p>
+        <p class="rela-block caps side-header">Education</p>
+        <p class="rela-block list-thing">Web Development Bootcamp</p>
+        <p class="rela-block list-thing">Computer Science Degree</p>
+        <p class="rela-block list-thing">Design Fundamentals</p>
+        <p class="rela-block list-thing">Continuous Learning</p>
+    </div>
+    <div class="rela-block content-container">
+        <h2 class="rela-block caps title">Jr Front-End Developer</h2>
+        <div class="rela-block separator"></div>
+        <div class="rela-block caps greyed">Profile</div>
+        <p class="long-margin">Passionate front-end developer with expertise in modern web technologies. Strong background in creating responsive, user-friendly interfaces with clean, efficient code. Dedicated to continuous learning and staying current with industry best practices and emerging technologies.</p>
+        <div class="rela-block caps greyed">Experience</div>
 
-    header {
-      background: var(--primary);
-      color: white;
-      padding: 1.2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-family: var(--font-head);
-      font-size: 2rem;
-      margin: 0.3rem 0;
-    }
-
-    header .subtitle {
-      font-size: 1rem;
-      font-weight: 300;
-    }
-
-    header .contact {
-      margin-top: 0.5rem;
-      font-size: 0.85rem;
-    }
-
-    .main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding: 1rem 2rem;
-      gap: 1.5rem;
-    }
-
-    section {
-      background: var(--gray-bg);
-      padding: 1rem;
-      border-left: 5px solid var(--primary);
-      border-radius: 8px;
-    }
-
-    h2 {
-      font-family: var(--font-head);
-      font-size: 1.1rem;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    .item {
-      margin-bottom: 0.8rem;
-    }
-
-    .item h3 {
-      font-size: 0.95rem;
-      color: var(--accent);
-      margin-bottom: 0.1rem;
-    }
-
-    .item .meta {
-      font-size: 0.75rem;
-      color: #555;
-      margin-bottom: 0.2rem;
-    }
-
-    .item p {
-      font-size: 0.85rem;
-      margin: 0.2rem 0;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: var(--primary);
-      color: white;
-      padding: 0.3rem 0.6rem;
-      border-radius: 12px;
-      font-size: 0.75rem;
-      margin: 0.2rem 0.3rem 0 0;
-    }
-
-    .badges {
-      font-size: 0.85rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-    }
-
-    .badges b {
-      color: var(--accent);
-    }
-
-    .traits {
-      padding: 1rem 2rem;
-      background: #eee;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    .traits p {
-      margin: 0.4rem 0;
-    }
-
-    .traits span {
-      color: var(--primary);
-      font-weight: bold;
-    }
-
-    @media print {
-      @page {
-        size: letter;
-        margin: 0;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      header, .traits, .main {
-        padding: 0.5rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Sébastien Cabana</h1>
-    <div class="subtitle">Étudiant en génie informatique</div>
-    <div class="contact">📞 (514) 883-8805 | 📧 sebastien.cabana@uqtr.ca | 📍 Trois-Rivières</div>
-  </header>
-
-  <div class="traits">
-    <p><span>Prend des initiatives avec confiance</span> : Proactif et autonome, je transforme les défis en opportunités grâce à une action rapide.</p>
-    <p><span>Leader positif</span> : J’inspire les équipes en favorisant la collaboration et en guidant chacun vers les objectifs communs.</p>
-    <p><span>Créatif et innovant</span> : Je propose des solutions originales grâce à ma capacité à penser différemment et à explorer.</p>
-    <p>👉 <strong>Voilà pourquoi je suis la personne qu’il vous faut!</strong></p>
-  </div>
-
-  <div class="main">
-    <section>
-      <h2>Formation</h2>
-      <div class="item">
-        <h3>Baccalauréat – Génie informatique</h3>
-        <div class="meta">UQTR | En cours</div>
-      </div>
-      <div class="item">
-        <h3>DEC – Sciences informatiques et maths</h3>
-        <div class="meta">Cégep de Saint-Jérôme | 2023</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Distinctions</h2>
-      <div class="badges">
-        <p><b>Trésorier</b> (2024–2025) – Association de génie électrique et informatique de l’UQTR</p>
-        <p><b>Prix Stars du Réseau de la santé</b> (2024) – Développement innovant</p>
-        <p><b>Médaille académique</b> du gouverneur général (2019)</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Expériences</h2>
-      <div class="item">
-        <h3>Agent administratif</h3>
-        <div class="meta">CHAUR, Trois-Rivières | En cours</div>
-        <p>Adaptabilité en contexte organisationnel. Amélioration de l’efficacité des tâches administratives.</p>
-      </div>
-      <div class="item">
-        <h3>Entraîneur de volleyball</h3>
-        <div class="meta">Académie Les Estacades | 2023–2024</div>
-      </div>
-      <div class="item">
-        <h3>Assistant gérant</h3>
-        <div class="meta">Tim Hortons | 2019–2023</div>
-        <p>Leadership d’équipe, gestion des opérations, formation et optimisation des processus.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Compétences</h2>
-      <div class="skills">
-        <span>C</span><span>C++</span><span>C#</span><span>Shell</span><span>VBA</span>
-        <span>Git</span><span>MATLAB</span><span>STM32CubeIDE</span>
-        <span>Altium</span><span>SolidWorks</span>
-      </div>
-    </section>
-
-    <section>
-      <h2>Projets notables</h2>
-      <div class="item">
-        <h3>Compétition de programmation</h3>
-        <div class="meta">CQI | 2025</div>
-      </div>
-      <div class="item">
-        <h3>Responsable de la branche informatique</h3>
-        <div class="meta">Machine des Jeux de Génie | 2025</div>
-      </div>
-      <div class="item">
-        <h3>Algorithme de simplification booléenne</h3>
-        <div class="meta">Projet personnel | 2024</div>
-      </div>
-      <div class="item">
-        <h3>Régulateur de vitesse adaptatif</h3>
-        <div class="meta">Projet de fin d’études | 2023</div>
-      </div>
-    </section>
-  </div>
-</body>
-</html>
+        <h3>Frontend Developer</h3>
+        <p class="light">Tech Company | 2022 - Present</p>
+        <p class="justified">Developed and maintained responsive web applications using modern JavaScript frameworks. Collaborated with design teams to implement pixel-perfect user interfaces and optimize user experience across multiple devices and browsers.</p>
+        
+        <h3>Web Developer Intern</h3>
+        <p class="light">Digital Agency | 2021 - 2022</p>
+        <p class="justified">Assisted in building client websites using HTML, CSS, and JavaScript. Gained experience with content management systems and learned best practices for web accessibility and performance optimization.</p>
+        
+        <h3>Freelance Developer</h3>
+        <p class="light">Self-Employed | 2020 - 2021</p>
+        <p class="justified">Created custom websites for small businesses and entrepreneurs. Developed skills in client communication, project management, and delivering solutions that meet specific business requirements.</p>
+    </div>
+</div>

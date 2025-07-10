@@ -1,0 +1,306 @@
+/* GENERAL FONTS AND CLASSES AND SETUP STUFF */
+* {
+    box-sizing: border-box; 
+    transition: 0.35s ease;
+}
+    
+.rela-block {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.rela-inline {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+.floated {
+    display: block;
+    position: relative;
+    float: left;
+}
+    
+.abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 88%;
+}
+    
+/* --- COLORS --- */
+
+/* --- PAGE STYLINGS --- */
+body {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    line-height: 18px;
+    background: white;
+    margin: 0;
+    padding: 0;
+    width: 8.5in;
+    height: 11in;
+    overflow: hidden;
+}
+
+body:before {
+    display: none;
+}
+    
+.caps {text-transform: uppercase;}
+.justified {text-align: justify;}
+p.light {color: #777;}
+h2 {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    line-height: 28px;
+    color: black;
+}
+h3 {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 20px;
+    color: black;
+    margin-bottom: 2px;
+}
+    
+.page {
+    width: 100%;
+    max-width: 8.5in;
+    height: 11in;
+    margin: 0;
+    background-color: white;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+}
+    
+.top-bar {
+    height: 200px;
+    background-color: #848484;
+    color: white;
+    flex-shrink: 0;
+}
+    
+.name {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 280px;
+    height: 80px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 36px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    line-height: 40px;
+}
+
+.name div {
+    width: 94%;
+}
+    
+.side-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    background-color: #F7E0C1;
+    padding: 200px 20px 0;
+    height: 100%;
+    overflow: hidden;
+}
+        
+.mugshot {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    height: 150px;
+    width: 150px;
+}
+
+.mugshot .logo {
+    margin: -15px;
+}
+    
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+    color: black;
+    height: 180px;
+    width: 180px;
+}
+
+.logo .logo-svg {
+    height: 100%;
+    width: 100%;
+    stroke: black;
+    cursor: pointer;
+}
+
+.logo .logo-text {
+    position: absolute;
+    top: 58%;
+    right: 16%;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 40px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.social {
+    padding-left: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.social:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 8px;
+    height: 25px;
+    width: 25px;
+    background-size: cover !important;
+}
+
+.social.twitter:before {
+    background: url('https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png') center no-repeat;
+}
+
+.social.pinterest:before {
+    background: url('https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png') center no-repeat;
+}
+
+.social.linked-in:before {
+    background: url('https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png') center no-repeat;
+}
+        
+.side-header {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 30px auto 8px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #888;
+}
+    
+.list-thing {
+    padding-left: 18px; 
+    margin-bottom: 6px;
+    font-size: 13px;
+    line-height: 16px;
+}
+        
+.content-container {
+    margin-left: 280px;
+    margin-right: 0;
+    width: calc(100% - 280px);
+    padding: 10px 25px 30px;
+    height: calc(100% - 120px);
+    overflow: hidden;
+}
+
+.content-container > * {
+    margin: 0 auto 12px;
+}
+
+.content-container > h3 {
+    margin: 0 auto 2px;
+}
+
+.content-container > p.long-margin {
+    margin: 0 auto 20px;
+}
+
+.content-container > p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.title {
+    width: 80%; 
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.separator {
+    width: 180px;
+    height: 2px;
+    background-color: #999;
+    margin-bottom: 10px;
+}
+    
+.greyed {
+    background-color: #DDD;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 6px 0;
+    margin-bottom: 8px;
+}
+    
+@media print {
+    body {
+        width: 8.5in;
+        height: 11in;
+        margin: 0;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .page {
+        width: 8.5in;
+        height: 11in;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+    
+    .side-bar {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .top-bar {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .name {
+        color: white; 
+        font-family: 'Raleway';
+        font-size: 28px;
+        letter-spacing: 4px;
+        font-weight: 100;
+        line-height: 36px;
+    }
+}
