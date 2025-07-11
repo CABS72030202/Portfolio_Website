@@ -37,5 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
         el.textContent = newContent;
       }
     });
+    
+    // Update form placeholders
+    document.querySelectorAll("[data-en-placeholder]").forEach(el => {
+      const newPlaceholder = el.getAttribute(`data-${currentLang}-placeholder`);
+      if (newPlaceholder) {
+        el.setAttribute("placeholder", newPlaceholder);
+      }
+    });
   }
 });

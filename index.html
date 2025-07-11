@@ -38,6 +38,8 @@
   <script defer src="./assets/js/hero.js"></script>
   <script defer src="./assets/js/language.js"></script>
   <script defer src="./assets/js/security.js"></script>
+  <script defer src="./assets/js/scroll-nav.js"></script>
+  <script defer src="./assets/js/contact.js"></script>
 </head>
 
 <body>
@@ -68,16 +70,165 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html" class="current" data-en="Home" data-fr="Accueil"></a></li>
-          <li><a href="background.html" data-en="Background" data-fr="Parcours"></a></li>
-          <li><a href="projects.html" data-en="Projects" data-fr="Projets"></a></li>
-          <li><a href="skills.html" data-en="Skills" data-fr="Compétences"></a></li>
-          <li><a href="contact.html" data-en="Contact" data-fr="Contact"></a></li>
+          <li><a href="#home" class="current" data-en="Home" data-fr="Accueil"></a></li>
+          <li><a href="#background" data-en="Background" data-fr="Parcours"></a></li>
+          <li><a href="#projects" data-en="Projects" data-fr="Projets"></a></li>
+          <li><a href="#skills" data-en="Skills" data-fr="Compétences"></a></li>
+          <li><a href="#contact" data-en="Contact" data-fr="Contact"></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="hero visible">
+      <div class="container">
+        <h1 data-en="Welcome to My Portfolio" data-fr="Bienvenue dans mon Portfolio">Welcome to My Portfolio</h1>
+        <h2 data-en="Software Developer & Problem Solver" data-fr="Développeur Logiciel & Résolveur de Problèmes">Software Developer & Problem Solver</h2>
+        <p data-en="I'm passionate about creating innovative solutions and bringing ideas to life through code." data-fr="Je suis passionné par la création de solutions innovantes et donner vie aux idées à travers le code.">I'm passionate about creating innovative solutions and bringing ideas to life through code.</p>
+        <a href="#contact" class="btn" data-en="Get In Touch" data-fr="Contactez-moi">Get In Touch</a>
+      </div>
+    </section>
+
+    <!-- Background Section -->
+    <section id="background" class="hero">
+      <div class="container">
+        <h1 data-en="My Background" data-fr="Mon Parcours">My Background</h1>
+        <h2 data-en="Education & Experience" data-fr="Formation & Expérience">Education & Experience</h2>
+        <p data-en="Here's my educational background and professional journey." data-fr="Voici mon parcours éducatif et professionnel.">Here's my educational background and professional journey.</p>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3 data-en="Bachelor's Degree in Computer Science" data-fr="Baccalauréat en Informatique">Bachelor's Degree in Computer Science</h3>
+            <p data-en="University of Quebec at Trois-Rivières" data-fr="Université du Québec à Trois-Rivières">University of Quebec at Trois-Rivières</p>
+            <span class="date" data-en="2022 - Present" data-fr="2022 - Présent">2022 - Present</span>
+          </div>
+          
+          <div class="timeline-item">
+            <h3 data-en="Software Development Internship" data-fr="Stage en Développement Logiciel">Software Development Internship</h3>
+            <p data-en="Gaining hands-on experience in software development and project management." data-fr="Acquisition d'expérience pratique en développement logiciel et gestion de projet.">Gaining hands-on experience in software development and project management.</p>
+            <span class="date" data-en="2024 - Present" data-fr="2024 - Présent">2024 - Present</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="hero">
+      <div class="container">
+        <h1 data-en="My Projects" data-fr="Mes Projets">My Projects</h1>
+        <h2 data-en="Creative Solutions & Innovation" data-fr="Solutions Créatives & Innovation">Creative Solutions & Innovation</h2>
+        <p data-en="Explore some of my latest projects and technical achievements." data-fr="Explorez certains de mes projets récents et réalisations techniques.">Explore some of my latest projects and technical achievements.</p>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 data-en="Portfolio Website" data-fr="Site Web Portfolio">Portfolio Website</h3>
+            <p data-en="A responsive, multilingual portfolio website built with HTML, CSS, and JavaScript." data-fr="Un site web portfolio réactif et multilingue construit avec HTML, CSS et JavaScript.">A responsive, multilingual portfolio website built with HTML, CSS, and JavaScript.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <h3 data-en="Coming Soon" data-fr="À Venir">Coming Soon</h3>
+            <p data-en="More exciting projects are in development." data-fr="Plus de projets passionnants sont en développement.">More exciting projects are in development.</p>
+            <div class="project-tech">
+              <span data-en="Stay Tuned" data-fr="Restez à l'écoute">Stay Tuned</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="hero">
+      <div class="container">
+        <h1 data-en="My Skills" data-fr="Mes Compétences">My Skills</h1>
+        <h2 data-en="Technical Expertise" data-fr="Expertise Technique">Technical Expertise</h2>
+        <p data-en="Technologies and tools I work with to build amazing solutions." data-fr="Technologies et outils que j'utilise pour créer des solutions exceptionnelles.">Technologies and tools I work with to build amazing solutions.</p>
+        
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 data-en="Programming Languages" data-fr="Langages de Programmation">Programming Languages</h3>
+            <div class="skill-list">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C++</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 data-en="Web Technologies" data-fr="Technologies Web">Web Technologies</h3>
+            <div class="skill-list">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 data-en="Tools & Technologies" data-fr="Outils & Technologies">Tools & Technologies</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="hero">
+      <div class="container">
+        <h1 data-en="Get In Touch" data-fr="Contactez-moi">Get In Touch</h1>
+        <h2 data-en="Let's Work Together" data-fr="Travaillons Ensemble">Let's Work Together</h2>
+        <p data-en="I'm always open to discussing new opportunities and interesting projects." data-fr="Je suis toujours ouvert à discuter de nouvelles opportunités et de projets intéressants.">I'm always open to discussing new opportunities and interesting projects.</p>
+        
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h3 data-en="Email" data-fr="Courriel">Email</h3>
+            <p>sebastien.cabana@example.com</p>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <h3 data-en="Phone" data-fr="Téléphone">Phone</h3>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3 data-en="Location" data-fr="Localisation">Location</h3>
+            <p data-en="Trois-Rivières, QC, Canada" data-fr="Trois-Rivières, QC, Canada">Trois-Rivières, QC, Canada</p>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3 data-en="Send a Message" data-fr="Envoyer un Message">Send a Message</h3>
+          <form>
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required data-en-placeholder="Your Name" data-fr-placeholder="Votre Nom">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required data-en-placeholder="Your Email" data-fr-placeholder="Votre Courriel">
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Your Message" required data-en-placeholder="Your Message" data-fr-placeholder="Votre Message"></textarea>
+            </div>
+            <button type="submit" class="btn" data-en="Send Message" data-fr="Envoyer Message">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="footer-content">
