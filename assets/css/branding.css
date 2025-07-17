@@ -7,10 +7,14 @@
 
 :root {
   /* === COLORS === */
-  --teal: #008080;
+  /*--teal: #008080;
   --orange: #FF7A00;
   --green: #00760F;
-  --blue: #000080;
+  --blue: #000080;*/
+  --teal: #0F4C5C;
+  --orange: #D65A00;
+  --green: #14532D;
+  --blue: #1E3A8A;
   --success: #28a745;
   --error: #FF0000;
   --white: #ffffff;
