@@ -1,9 +1,9 @@
 .carousel {
-    background-color: var(--cse-light-gray);
+    background-color: var(--light-gray);
     padding: 60px 0;
     position: relative;
     overflow: hidden;
-    font-family: var(--cse-body-font);
+    font-family: var(--body-font);
     height: 320px;
     perspective: 1000px;
 }
@@ -15,11 +15,11 @@
 }
 
 .carousel h2 {
-    margin: var(--cse-title-margin);
-    color: var(--cse-title-color);
-    font-size: var(--cse-title-size);
-    font-family: var(--cse-title-font);
-    text-align: var(--cse-title-align);
+    margin: var(--title-margin);
+    color: var(--title-color);
+    font-size: var(--title-size);
+    font-family: var(--title-font);
+    text-align: var(--title-align);
 }
 
 .carousel-inner {
@@ -35,17 +35,17 @@
     width: 100%;
     height: 100%;
     padding: 30px;
-    background-color: var(--cse-white);
+    background-color: var(--white);
     border-radius: 8px;
-    border-left: 5px solid var(--cse-orange);
+    border-left: 5px solid var(--orange);
     display: flex;
     flex-direction: column;
     justify-content: center;
     backface-visibility: hidden;
     transition: translate 0.2s ease, box-shadow 0.2s ease, opacity 0.5s ease;
     opacity: 0;
-    font-family: var(--cse-body-font);
-    color: var(--cse-body-color);
+    font-family: var(--body-font);
+    color: var(--body-color);
     translate: 0 0;
 }
 
@@ -60,18 +60,18 @@
 }
 
 .carousel-item h3 {
-    margin: var(--cse-subtitle-margin);
-    color: var(--cse-green);
-    font-size: var(--cse-subtitle-size);
-    font-family: var(--cse-subtitle-font);
-    text-align: var(--cse-subtitle-align);
+    margin: var(--subtitle-margin);
+    color: var(--green);
+    font-size: var(--subtitle-size);
+    font-family: var(--subtitle-font);
+    text-align: var(--subtitle-align);
 }
 
 .carousel-item p {
-    margin: var(--cse-body-margin);
-    color: var(--cse-black);
-    font-size: var(--cse-body-size);
-    font-family: var(--cse-body-font);
+    margin: var(--body-margin);
+    color: var(--black);
+    font-size: var(--body-size);
+    font-family: var(--body-font);
     text-align: justify;
     padding: 1rem 0;
     line-height: 1.3;
@@ -95,14 +95,14 @@
     display: inline-block;
     margin: 0 auto 0 auto;
     padding: 0.75rem 2rem;
-    background: var(--cse-orange);
-    color: var(--cse-white);
+    background: var(--orange);
+    color: var(--white);
     border: none;
     border-radius: 6px;
-    font-family: var(--cse-body-font);
-    font-size: var(--cse-body-size);
+    font-family: var(--body-font);
+    font-size: var(--body-size);
     font-weight: 600;
-    text-align: var(--cse-body-align);
+    text-align: var(--body-align);
     max-width: 300px;
     text-decoration: none;
     cursor: pointer;
@@ -111,8 +111,8 @@
 }
 
 .carousel-item .btn:hover {
-  background: var(--cse-blue);
-  color: var(--cse-white);
+  background: var(--blue);
+  color: var(--white);
 }
 
 .carousel-item .btn:active {
@@ -130,12 +130,12 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: var(--cse-gray);
+    background-color: var(--gray);
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .carousel-indicator.active {
-    background-color: var(--cse-green);
+    background-color: var(--green);
 }

@@ -7,7 +7,7 @@
 }
 
 .accordion-item {
-  background: var(--cse-light-gray);
+  background: var(--light-gray);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -29,35 +29,35 @@
   padding: 1.5rem 2rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  background: var(--cse-white);
+  background: var(--white);
 }
 
 .accordion-header:hover {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--cse-blue) 10%, var(--cse-white)) 0%, color-mix(in srgb, var(--cse-blue) 15%, var(--cse-white)) 100%);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--blue) 10%, var(--white)) 0%, color-mix(in srgb, var(--blue) 15%, var(--white)) 100%);
 }
 
 .accordion-item.active .accordion-header {
-  background: linear-gradient(135deg, var(--cse-blue) 0%, color-mix(in srgb, var(--cse-blue) 85%, var(--cse-teal)) 100%);
+  background: linear-gradient(135deg, var(--blue) 0%, color-mix(in srgb, var(--blue) 85%, var(--teal)) 100%);
 }
 
 .accordion-item.active .accordion-header h3 {
-  color: var(--cse-white);
+  color: var(--white);
 }
 
 .accordion-item.active .accordion-header i {
-  color: var(--cse-white);
+  color: var(--white);
 }
 
 .accordion-header i:first-child {
   font-size: 1.5rem;
-  color: var(--cse-green);
+  color: var(--green);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accordion-header h3 {
-  font-family: var(--cse-subtitle-font);
-  color: var(--cse-subtitle-color);
-  font-size: calc(var(--cse-subtitle-size) * 0.9);
+  font-family: var(--subtitle-font);
+  color: var(--subtitle-color);
+  font-size: calc(var(--subtitle-size) * 0.9);
   margin: 0;
   flex-grow: 1;
   line-height: 1.2;
@@ -66,20 +66,20 @@
 
 .accordion-arrow {
   font-size: 1rem !important;
-  color: var(--cse-subtitle-color) !important;
+  color: var(--subtitle-color) !important;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accordion-item.active .accordion-arrow {
   transform: rotate(180deg);
-  color: var(--cse-white) !important;
+  color: var(--white) !important;
 }
 
 .accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), padding 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
-  background: var(--cse-white);
+  background: var(--white);
   opacity: 0;
 }
 
@@ -96,10 +96,10 @@
 }
 
 .accordion-card {
-  background: color-mix(in srgb, var(--cse-light-gray) 30%, transparent);
+  background: color-mix(in srgb, var(--light-gray) 30%, transparent);
   border-radius: 8px;
   padding: 1.25rem;
-  border-left: 4px solid var(--cse-green);
+  border-left: 4px solid var(--green);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(20px);
   opacity: 0;
@@ -128,25 +128,25 @@
 }
 
 .accordion-card:hover {
-  border-left-color: var(--cse-orange);
-  background: color-mix(in srgb, var(--cse-blue) 5%, var(--cse-white));
+  border-left-color: var(--orange);
+  background: color-mix(in srgb, var(--blue) 5%, var(--white));
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .accordion-card h4 {
-  font-family: var(--cse-subtitle-font);
-  color: var(--cse-teal);
-  font-size: calc(var(--cse-subtitle2-size) * 0.9);
+  font-family: var(--subtitle-font);
+  color: var(--teal);
+  font-size: calc(var(--subtitle2-size) * 0.9);
   margin: 0 0 0.5rem 0;
   font-weight: 600;
   line-height: 1.3;
 }
 
 .accordion-card p {
-  font-family: var(--cse-body-font);
-  color: var(--cse-body-color);
-  font-size: calc(var(--cse-body-size) * 0.95);
+  font-family: var(--body-font);
+  color: var(--body-color);
+  font-size: calc(var(--body-size) * 0.95);
   margin: 0;
   line-height: 1.4;
 }
@@ -155,9 +155,9 @@
   max-width: 900px;
   margin: 2.5rem auto 0;
   padding: 1.25rem;
-  background: color-mix(in srgb, var(--cse-green) 8%, transparent);
+  background: color-mix(in srgb, var(--green) 8%, transparent);
   border-radius: 8px;
-  border-left: 4px solid var(--cse-green);
+  border-left: 4px solid var(--green);
 }
 
 .note-content {
@@ -168,15 +168,15 @@
 
 .note-content i {
   font-size: 1.25rem;
-  color: var(--cse-green);
+  color: var(--green);
   margin-top: 0.15rem;
   flex-shrink: 0;
 }
 
 .note-text p {
-  font-family: var(--cse-body-font);
-  color: var(--cse-body-color);
-  font-size: calc(var(--cse-body-size) * 0.95);
+  font-family: var(--body-font);
+  color: var(--body-color);
+  font-size: calc(var(--body-size) * 0.95);
   margin: 0;
   line-height: 1.5;
   font-style: italic;
@@ -202,7 +202,7 @@
   }
   
   .section-intro {
-    font-size: var(--cse-body-size);
+    font-size: var(--body-size);
     margin-bottom: 2rem;
   }
   
@@ -213,7 +213,7 @@
   }
   
   .accordion-header h3 {
-    font-size: calc(var(--cse-subtitle2-size) * 0.95);
+    font-size: calc(var(--subtitle2-size) * 0.95);
   }
   
   .accordion-header i:first-child {
