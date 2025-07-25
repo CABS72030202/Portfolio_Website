@@ -33,6 +33,7 @@ function initSkillsTabs() {
 function initProjectFilters() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
+    const accordionItems = document.querySelectorAll('.accordion-item');
     
     filterBtns.forEach(btn => {
         btn.addEventListener('click', function() {
@@ -58,6 +59,28 @@ function initProjectFilters() {
                     setTimeout(() => {
                         card.style.display = 'none';
                     }, 300);
+                }
+            });
+            
+            // Show/hide accordion items based on filter
+            accordionItems.forEach(item => {
+                const categories = item.getAttribute('data-category');
+                if (categories) {
+                    const categoryList = categories.split(' ');
+                    
+                    if (filter === 'all' || categoryList.includes(filter)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
                 }
             });
         });
