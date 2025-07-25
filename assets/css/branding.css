@@ -7,16 +7,16 @@
 
 :root {
   /* === COLORS === */
-  --teal: #008080;
-  --orange: #FF7A00;
-  --green: #00760F;
-  --blue: #000080;
+  --teal: #4A5C94  ;
+  --orange: #D4A017 ;
+  --green: #1E3A8A ;
+  --blue: #3A1066 ;
   --success: #28a745;
   --error: #FF0000;
   --white: #ffffff;
-  --light-gray: #f6f6f6;
+  --light-gray: #F5F3F7 ;
   --gray: #606060;
-  --black: #000000;
+  --black: #0F0A1A ;
 
   /* === TITLES === */
   --title-font: 'Roboto Condensed', sans-serif;

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Cabana</title>
+  <title>Sébastien Cabana</title>
   <link rel="icon" type="image/png" href="./assets/img/logo.png" />
 
   <!-- Security -->
@@ -34,11 +33,24 @@
   <link rel="stylesheet" href="./assets/css/branding.css" />
   <link rel="stylesheet" href="./assets/css/security.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/specs/accordion.css" />
+  <link rel="stylesheet" href="./assets/css/specs/carousel.css" />
+  <link rel="stylesheet" href="./assets/css/specs/document.css" />
+  <link rel="stylesheet" href="./assets/css/specs/form.css" />
+  <link rel="stylesheet" href="./assets/css/specs/gallery.css" />
+  <link rel="stylesheet" href="./assets/css/specs/tab.css" />
 
   <!-- Scripts -->
+  <script defer src="./assets/js/accordion.js"></script>
+  <script defer src="./assets/js/carousel.js"></script>
+  <script defer src="./assets/js/form.js"></script>
+  <script defer src="./assets/js/gallery.js"></script>
   <script defer src="./assets/js/hero.js"></script>
   <script defer src="./assets/js/language.js"></script>
+  <script defer src="./assets/js/portfolio.js"></script>
+  <script defer src="./assets/js/scroll-nav.js"></script>
   <script defer src="./assets/js/security.js"></script>
+  <script defer src="./assets/js/tab.js"></script>
 </head>
 
 <body>
@@ -46,19 +58,16 @@
     <div class="container">
       <div class="header-content">
         <div class="header-left">
-          <img src="./assets/img/logo.png" alt="Logo FCEG" class="logo"/>
+          <img src="./assets/img/logo.png" alt="Logo" class="logo"/>
           <div class="social-icons">
-            <a href="https://www.instagram.com/cse.cddi/" target="_blank" aria-label="Instagram" class="social-icon">
-              <i class="fab fa-instagram"></i>
+            <a href="https://github.com/CABS72030202" target="_blank" aria-label="github" class="social-icon">
+              <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.facebook.com/cse.cddi" target="_blank" aria-label="Facebook" class="social-icon">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/cse2026cddi" target="_blank" aria-label="LinkedIn" class="social-icon">
+            <a href="https://www.linkedin.com/in/s%C3%A9bastien-cabana-79075327b/" target="_blank" aria-label="LinkedIn" class="social-icon">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://discord.com" target="_blank" aria-label="Discord" class="social-icon">
-              <i class="fab fa-discord"></i>
+            <a href="https://www.facebook.com/sebc5380/" target="_blank" aria-label="Facebook" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
             </a>
           </div>
         </div>
@@ -69,12 +78,1079 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html" class="current" data-en="Home" data-fr="Accueil"></a></li>
+          <li><a href="#about" class="current" data-en="About Me" data-fr="À propos"></a></li>
+          <li><a href="#skills" data-en="Skills" data-fr="Compétences"></a></li>
+          <li><a href="#projects" data-en="Projects" data-fr="Projets"></a></li>
+          <li><a href="#experience" data-en="Experience" data-fr="Expérience"></a></li>
+          <li><a href="#education" data-en="Education" data-fr="Éducation"></a></li>
+          <li><a href="#competitions" data-en="Competitions & Involvement" data-fr="Compétitions & Implications"></a></li>
+          <li><a href="#interests" data-en="Interests" data-fr="Intérêts"></a></li>
+          <li><a href="#contact" data-en="Contact" data-fr="Contact"></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main>
+    <!-- About Me Section -->
+    <section id="about" class="hero visible">
+      <div class="container about-container">
+        <div class="about-header">
+          <img src="./assets/img/profile-photo.png" alt="Profile Photo" class="profile-photo"/>
+          <div class="about-text">
+            <h1 data-en="Sébastien Cabana" data-fr="Sébastien Cabana">Sébastien Cabana</h1>
+            <h2 data-en="Computer Engineering Student & Embedded Systems Developer" data-fr="Étudiant en Génie Informatique & Développeur de Systèmes Embarqués">Computer Engineering Student & Embedded Systems Developer</h2>
+            <p data-en="Passionate computer engineering student specializing in embedded systems, analog circuit design, and PCB development. Experienced in microcontroller programming, sensor integration, and IoT solutions. Currently pursuing my Bachelor's degree at UQTR while developing innovative hardware-software solutions." data-fr="Étudiant passionné en génie informatique spécialisé dans les systèmes embarqués, la conception de circuits analogiques et le développement de PCB. Expérimenté en programmation de microcontrôleurs, intégration de capteurs et solutions IoT. Je poursuis actuellement mon baccalauréat à l'UQTR tout en développant des solutions matérielles-logicielles innovantes.">Passionate computer engineering student specializing in embedded systems, analog circuit design, and PCB development. Experienced in microcontroller programming, sensor integration, and IoT solutions. Currently pursuing my Bachelor's degree at UQTR while developing innovative hardware-software solutions.</p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span data-en="3rd Year CE Student" data-fr="Étudiant 3e année GI">3rd Year CE Student</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-microchip"></i>
+                <span data-en="10+ MCU Projects" data-fr="10+ Projets MCU">10+ MCU Projects</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-bolt"></i>
+                <span data-en="5+ PCB Designs" data-fr="5+ Designs PCB">5+ PCB Designs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="hero">
+      <div class="container">
+        <h1 data-en="My Skills" data-fr="Mes Compétences">My Skills</h1>
+        <h2 data-en="Technical Expertise" data-fr="Expertise Technique">Technical Expertise</h2>
+        <p data-en="Technologies and tools I work with to build amazing solutions." data-fr="Technologies et outils que j'utilise pour créer des solutions exceptionnelles.">Technologies and tools I work with to build amazing solutions.</p>
+        
+        <div class="skills-tabs">
+          <button class="tab-btn active" data-tab="embedded">
+            <i class="fas fa-microchip"></i>
+            <span data-en="Embedded Systems" data-fr="Systèmes Embarqués">Embedded Systems</span>
+          </button>
+          <button class="tab-btn" data-tab="hardware">
+            <i class="fas fa-bolt"></i>
+            <span data-en="Hardware Design" data-fr="Conception Matérielle">Hardware Design</span>
+          </button>
+          <button class="tab-btn" data-tab="programming">
+            <i class="fas fa-code"></i>
+            <span data-en="Programming" data-fr="Programmation">Programming</span>
+          </button>
+          <button class="tab-btn" data-tab="tools">
+            <i class="fas fa-tools"></i>
+            <span data-en="Tools & Software" data-fr="Outils & Logiciels">Tools & Software</span>
+          </button>
+        </div>
+        
+        <div class="skills-content">
+          <div class="skill-tab active" id="embedded">
+            <div class="skill-list">
+              <div class="skill-item">
+                <span>Arduino/ESP32</span>
+              </div>
+              <div class="skill-item">
+                <span>STM32</span>
+              </div>
+              <div class="skill-item">
+                <span>Raspberry Pi</span>
+              </div>
+              <div class="skill-item">
+                <span>GPIO/UART/I2C/SPI</span>
+              </div>
+              <div class="skill-item">
+                <span>UBoot</span>
+              </div>
+              <div class="skill-item">
+                <span>Buildroot</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-tab" id="hardware">
+            <div class="skill-list">
+              <div class="skill-item">
+                <span>PCB Design</span>
+              </div>
+              <div class="skill-item">
+                <span>Analog Circuit Design</span>
+              </div>
+              <div class="skill-item">
+                <span>Digital Circuit Design</span>
+              </div>
+              <div class="skill-item">
+                <span>Schematic Design</span>
+              </div>
+              <div class="skill-item">
+                <span>Signal Processing</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-tab" id="programming">
+            <div class="skill-list">
+              <div class="skill-item">
+                <span>C/C++</span>
+              </div>
+              <div class="skill-item">
+                <span>VHDL</span>
+              </div>
+              <div class="skill-item">
+                <span>Git/Bash/Shell</span>
+              </div>
+              <div class="skill-item">
+                <span>MATLAB</span>
+              </div>
+              <div class="skill-item">
+                <span>VBA</span>
+              </div>
+              <div class="skill-item">
+                <span>C#</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-tab" id="tools">
+            <div class="skill-list">
+              <div class="skill-item">
+                <span>Altium Designer</span>
+              </div>
+              <div class="skill-item">
+                <span>SolidWorks</span>
+              </div>
+              <div class="skill-item">
+                <span>MATLAB</span>
+              </div>
+              <div class="skill-item">
+                <span>Oscilloscope/Logic Analyzer</span>
+              </div>
+              <div class="skill-item">
+                <span>STM32CubeIDE</span>
+              </div>
+              <div class="skill-item">
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <span>Vivado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="hero">
+      <div class="container">
+        <h1 data-en="Featured Projects" data-fr="Projets Vedettes">Featured Projects</h1>
+        <h2 data-en="Innovation & Technical Excellence" data-fr="Innovation & Excellence Technique">Innovation & Technical Excellence</h2>
+        <p data-en="Discover my most impactful projects showcasing cutting-edge engineering solutions and creative problem-solving." data-fr="Découvrez mes projets les plus marquants mettant en valeur des solutions d'ingénierie de pointe et une résolution créative de problèmes.">Discover my most impactful projects showcasing cutting-edge engineering solutions and creative problem-solving.</p>
+        
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fas fa-th"></i>
+            <span data-en="All" data-fr="Tous">All</span>
+          </button>
+          <button class="filter-btn" data-filter="ongoing">
+            <i class="fas fa-spinner"></i>
+            <span data-en="Ongoing" data-fr="En cours">Ongoing</span>
+          </button>
+          <button class="filter-btn" data-filter="embedded">
+            <i class="fas fa-microchip"></i>
+            <span data-en="Embedded Systems" data-fr="Systèmes Embarqués">Embedded Systems</span>
+          </button>
+          <button class="filter-btn" data-filter="hardware">
+            <i class="fas fa-bolt"></i>
+            <span data-en="Hardware Design" data-fr="Conception Matérielle">Hardware Design</span>
+          </button>
+          <button class="filter-btn" data-filter="web">
+            <i class="fas fa-globe"></i>
+            <span data-en="Web Projects" data-fr="Projets Web">Web Projects</span>
+          </button>
+          <button class="filter-btn" data-filter="tools">
+            <i class="fas fa-tools"></i>
+            <span data-en="Automation Tools" data-fr="Outils automatisés">Automation Tools</span>
+          </button>
+        </div>
+        
+        <div class="accordion">
+          <!-- CDDI 2026 Website -->
+          <div class="accordion-item" data-category="web ">
+            <div class="accordion-header">
+              <i class="fas fa-globe"></i>
+              <div class="project-title-section">
+                <h3 data-en="CDDI 2026 Website" data-fr="Site Web CDDI 2026">CDDI 2026 Website</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">GitHub Pages</span>
+                </div>
+              </div>
+              <img src="./assets/img/projects/cddi/cddi1.png" alt="CDDI 2026 Website" class="project-preview-image" />
+              <i class="fas fa-chevron-down accordion-arrow"></i>
+            </div>
+            <div class="accordion-content">
+              <p data-en="Official site of the Canadian sustainability engineering congress. Static site built with HTML, CSS, JS and hosted via GitHub Pages. Features responsive design, multilingual support, and optimized performance for academic conference registration and information sharing." 
+                 data-fr="Site officiel du congrès canadien sur le développement durable en ingénierie. Site statique construit en HTML, CSS et JS, hébergé via GitHub Pages. Comprend un design réactif, support multilingue et performance optimisée pour l'inscription et le partage d'informations de conférence académique.">
+                Official site of the Canadian sustainability engineering congress. Static site built with HTML, CSS, JS and hosted via GitHub Pages. Features responsive design, multilingual support, and optimized performance for academic conference registration and information sharing.
+              </p>
+              
+              <div class="gallery-container" data-folder="projects/cddi" data-prefix="cddi" data-count="3" data-extension="png">
+                <div class="gallery-track"></div>
+              </div>
+              
+              <div class="project-actions">
+                <a href="https://github.com/CABS72030202/cddi2026" target="_blank" class="action-btn">
+                  <i class="fab fa-github"></i>
+                  <span data-en="View Code" data-fr="Voir le Code">View Code</span>
+                </a>
+                <a href="https://cddi2026.github.io" target="_blank" class="action-btn">
+                  <i class="fas fa-external-link-alt"></i>
+                  <span data-en="Live Site" data-fr="Site Live">Live Site</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Random Alarm System -->
+          <div class="accordion-item" data-category="embedded ">
+            <div class="accordion-header">
+              <i class="fas fa-microchip"></i>
+              <div class="project-title-section">
+                <h3 data-en="Random Alarm System" data-fr="Alarme aléatoire">Random Alarm System</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">ATtiny85</span>
+                  <span class="tech-tag">Embedded C</span>
+                  <span class="tech-tag">Low Power</span>
+                  <span class="tech-tag">PCB</span>
+                </div>
+              </div>
+              <img src="./assets/img/projects/alarm/1.png" alt="Random Alarm System" class="project-preview-image" />
+              <i class="fas fa-chevron-down accordion-arrow"></i>
+            </div>
+            <div class="accordion-content">
+              <p data-en="ATtiny85-based embedded system that plays a melody at a random time. Ultra low-power design for watch-sized wearable. Features sleep modes, crystal oscillator precision, and custom PCB design optimized for minimal power consumption and compact form factor." 
+                 data-fr="Système embarqué basé sur ATtiny85 qui joue une mélodie à un moment aléatoire. Conception ultra-basse consommation pour format montre. Comprend des modes de veille, précision d'oscillateur à cristal et conception PCB personnalisée optimisée pour une consommation minimale et un facteur de forme compact.">
+                ATtiny85-based embedded system that plays a melody at a random time. Ultra low-power design for watch-sized wearable. Features sleep modes, crystal oscillator precision, and custom PCB design optimized for minimal power consumption and compact form factor.
+              </p>
+              
+              <div class="gallery-container" data-folder="projects/alarm" data-prefix="" data-count="5" data-extension="png">
+                <div class="gallery-track"></div>
+              </div>
+              
+              <div class="project-actions">
+                <a href="https://github.com/CABS72030202/random-alarm" target="_blank" class="action-btn">
+                  <i class="fab fa-github"></i>
+                  <span data-en="View Code" data-fr="Voir le Code">View Code</span>
+                </a>
+                <a href="#" class="action-btn">
+                  <i class="fas fa-file-pdf"></i>
+                  <span data-en="Schematic" data-fr="Schématique">Schematic</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- JDG 2025 Competition Machine -->
+          <div class="accordion-item" data-category="hardware ">
+            <div class="accordion-header">
+              <i class="fas fa-bolt"></i>
+              <div class="project-title-section">
+                <h3 data-en="JDG 2025 Competition Machine" data-fr="Machine Jeux de Génie 2025">JDG 2025 Competition Machine</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">CNC</span>
+                  <span class="tech-tag">Embedded</span>
+                  <span class="tech-tag">Hardware</span>
+                  <span class="tech-tag">Arduino</span>
+                </div>
+              </div>
+              <img src="./assets/img/projects/machine2025/1.png" alt="JDG 2025 Competition Machine" class="project-preview-image" />
+              <i class="fas fa-chevron-down accordion-arrow"></i>
+            </div>
+            <div class="accordion-content">
+              <p data-en="Collaborative challenge machine designed and built for the 2025 Engineering Games. Team-based project involving mechanical design, electronic control systems, and precision manufacturing. Features automated mechanisms and competitive performance optimization." 
+                 data-fr="Machine de défi conçue et fabriquée en équipe pour les Jeux de Génie 2025. Projet d'équipe impliquant la conception mécanique, les systèmes de contrôle électronique et la fabrication de précision. Comprend des mécanismes automatisés et l'optimisation des performances compétitives.">
+                Collaborative challenge machine designed and built for the 2025 Engineering Games. Team-based project involving mechanical design, electronic control systems, and precision manufacturing. Features automated mechanisms and competitive performance optimization.
+              </p>
+              
+              <div class="gallery-container" data-folder="projects/machine2025" data-prefix="" data-count="6" data-extension="png">
+                <div class="gallery-track"></div>
+              </div>
+              
+              <div class="project-actions">
+                <a href="#" class="action-btn">
+                  <i class="fas fa-video"></i>
+                  <span data-en="Demo Video" data-fr="Vidéo Démo">Demo Video</span>
+                </a>
+                <a href="#" class="action-btn">
+                  <i class="fas fa-cog"></i>
+                  <span data-en="CAD Files" data-fr="Fichiers CAO">CAD Files</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Autonomous Robot GEI1049 -->
+          <div class="accordion-item" data-category="embedded">
+            <div class="accordion-header">
+              <i class="fas fa-robot"></i>
+              <div class="project-title-section">
+                <h3 data-en="Autonomous Robot - GEI1049" data-fr="Robot autonome - GEI1049">Autonomous Robot – GEI1049</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">STM32</span>
+                  <span class="tech-tag">C</span>
+                  <span class="tech-tag">Navigation</span>
+                  <span class="tech-tag">Sensors</span>
+                </div>
+              </div>
+              <img src="./assets/img/projects/gei1049/1.png" alt="Autonomous Robot GEI1049" class="project-preview-image" />
+              <i class="fas fa-chevron-down accordion-arrow"></i>
+            </div>
+            <div class="accordion-content">
+              <p data-en="Collaborative STM32F4 project: path following, sensors integration and team-based development. Features autonomous navigation, obstacle detection, and real-time path planning using various sensors and embedded control algorithms." 
+                 data-fr="Projet collaboratif STM32F4 : suivi de trajectoire, intégration de capteurs, développement en équipe. Comprend la navigation autonome, la détection d'obstacles et la planification de trajectoire en temps réel utilisant divers capteurs et algorithmes de contrôle embarqués.">
+                Collaborative STM32F4 project: path following, sensors integration and team-based development. Features autonomous navigation, obstacle detection, and real-time path planning using various sensors and embedded control algorithms.
+              </p>
+              
+              <div class="gallery-container" data-folder="projects/gei1049" data-prefix="" data-count="4" data-extension="png">
+                <div class="gallery-track"></div>
+              </div>
+              
+              <div class="project-actions">
+                <a href="https://github.com/CABS72030202/gei1049-robot" target="_blank" class="action-btn">
+                  <i class="fab fa-github"></i>
+                  <span data-en="View Code" data-fr="Voir le Code">View Code</span>
+                </a>
+                <a href="#" class="action-btn">
+                  <i class="fas fa-file-pdf"></i>
+                  <span data-en="Report" data-fr="Rapport">Report</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boolean Expression Tool -->
+          <div class="accordion-item" data-category="tools">
+            <div class="accordion-header">
+              <i class="fas fa-calculator"></i>
+              <div class="project-title-section">
+                <h3 data-en="Boolean Expression Tool - GEI1072" data-fr="Résolution Booléenne - GEI1072">Boolean Expression Tool – GEI1072</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">C</span>
+                  <span class="tech-tag">Boolean Algebra</span>
+                  <span class="tech-tag">CLI</span>
+                  <span class="tech-tag">Algorithms</span>
+                </div>
+              </div>
+              <img src="./assets/img/projects/gei1072/1.png" alt="Boolean Expression Tool" class="project-preview-image" />
+              <i class="fas fa-chevron-down accordion-arrow"></i>
+            </div>
+            <div class="accordion-content">
+              <p data-en="C-based program to manipulate and simplify Boolean expressions via expressions, truth tables or file input. Features expression parsing, truth table generation, Boolean algebra simplification, and multiple input/output formats for digital logic design applications." 
+                 data-fr="Programme en C pour manipuler et simplifier des expressions booléennes par table de vérité, saisie ou fichier. Comprend l'analyse d'expressions, la génération de tables de vérité, la simplification d'algèbre booléenne et plusieurs formats d'entrée/sortie pour les applications de conception logique numérique.">
+                C-based program to manipulate and simplify Boolean expressions via expressions, truth tables or file input. Features expression parsing, truth table generation, Boolean algebra simplification, and multiple input/output formats for digital logic design applications.
+              </p>
+              
+              <div class="gallery-container" data-folder="projects/gei1072" data-prefix="" data-count="3" data-extension="png">
+                <div class="gallery-track"></div>
+              </div>
+              
+              <div class="project-actions">
+                <a href="https://github.com/CABS72030202/boolean-solver" target="_blank" class="action-btn">
+                  <i class="fab fa-github"></i>
+                  <span data-en="View Code" data-fr="Voir le Code">View Code</span>
+                </a>
+                <a href="#" class="action-btn">
+                  <i class="fas fa-terminal"></i>
+                  <span data-en="Try Online" data-fr="Essayer en Ligne">Try Online</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scooter Cruise Control -->
+          <div class="accordion-item" data-category="embedded">
+            <div class="accordion-header">
+              <i class="fas fa-motorcycle"></i>
+              <div class="project-title-section">
+                <h3 data-en="Scooter Cruise Control" data-fr="Contrôle de croisière pour trottinette">Scooter Cruise Control</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">Arduino</span>
+                  <span class="tech-tag">Reverse Engineering</span>
+                  <span class="tech-tag">Embedded</span>
+                  <span class="tech-tag">Control Systems</span>
+                </div>
+              </div>
+              <img src="./assets/img/projects/pfe2023/1.png" alt="Scooter Cruise Control" class="project-preview-image" />
+              <i class="fas fa-chevron-down accordion-arrow"></i>
+            </div>
+            <div class="accordion-content">
+              <p data-en="Final college project: reverse engineering and Arduino-based adaptive cruise control for an electric scooter. Features speed control algorithms, safety mechanisms, and integration with existing scooter electronics through careful reverse engineering analysis." 
+                 data-fr="Projet de fin d'études collégiales : rétro-ingénierie et ajout d'un contrôle de croisière adaptatif Arduino. Comprend des algorithmes de contrôle de vitesse, des mécanismes de sécurité et l'intégration avec l'électronique existante de la trottinette par analyse de rétro-ingénierie minutieuse.">
+                Final college project: reverse engineering and Arduino-based adaptive cruise control for an electric scooter. Features speed control algorithms, safety mechanisms, and integration with existing scooter electronics through careful reverse engineering analysis.
+              </p>
+              
+              <div class="gallery-container" data-folder="projects/pfe2023" data-prefix="" data-count="5" data-extension="png">
+                <div class="gallery-track"></div>
+              </div>
+              
+              <div class="project-actions">
+                <a href="#" class="action-btn">
+                  <i class="fas fa-file-pdf"></i>
+                  <span data-en="Final Report" data-fr="Rapport Final">Final Report</span>
+                </a>
+                <a href="#" class="action-btn">
+                  <i class="fas fa-video"></i>
+                  <span data-en="Demo Video" data-fr="Vidéo Démo">Demo Video</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3-Band Audio Amplifier -->
+          <div class="accordion-item" data-category="hardware ">
+            <div class="accordion-header">
+              <i class="fas fa-volume-up"></i>
+              <div class="project-title-section">
+                <h3 data-en="3-Band Audio Amplifier" data-fr="Amplificateur audio 3 bandes">3-Band Audio Amplifier</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">Altium</span>
+                  <span class="tech-tag">Analog</span>
+                  <span class="tech-tag">PCB Design</span>
+                  <span class="tech-tag">Audio</span>
+                </div>
+              </div>
+              <img src="./assets/img/projects/fip2025/1.png" alt="3-Band Audio Amplifier" class="project-preview-image" />
+              <i class="fas fa-chevron-down accordion-arrow"></i>
+            </div>
+            <div class="accordion-content">
+              <p data-en="Advanced multilayer PCB design showcased in educational videos on Altium and lab equipment use. Features professional-grade analog circuit design, impedance control, and comprehensive documentation for educational purposes in engineering curriculum." 
+                 data-fr="Conception PCB multicouche avancée avec capsules pédagogiques sur Altium et appareils de mesure. Comprend une conception de circuit analogique de qualité professionnelle, un contrôle d'impédance et une documentation complète à des fins éducatives dans le programme d'ingénierie.">
+                Advanced multilayer PCB design showcased in educational videos on Altium and lab equipment use. Features professional-grade analog circuit design, impedance control, and comprehensive documentation for educational purposes in engineering curriculum.
+              </p>
+              
+              <div class="gallery-container" data-folder="projects/fip2025" data-prefix="" data-count="7" data-extension="png">
+                <div class="gallery-track"></div>
+              </div>
+              
+              <div class="project-actions">
+                <a href="#" class="action-btn">
+                  <i class="fas fa-video"></i>
+                  <span data-en="Tutorial Videos" data-fr="Vidéos Tutoriels">Tutorial Videos</span>
+                </a>
+                <a href="#" class="action-btn">
+                  <i class="fas fa-file-pdf"></i>
+                  <span data-en="PCB Files" data-fr="Fichiers PCB">PCB Files</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Automated Finance Workbook -->
+          <div class="accordion-item" data-category="tools">
+            <div class="accordion-header">
+              <i class="fas fa-chart-line"></i>
+              <div class="project-title-section">
+                <h3 data-en="Automated Finance Workbook" data-fr="Classeur financier automatisé">Automated Finance Workbook</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">Excel</span>
+                  <span class="tech-tag">VBA</span>
+                  <span class="tech-tag">Finance</span>
+                  <span class="tech-tag">Automation</span>
+                </div>
+              </div>
+              <img src="./assets/img/projects/finances/1.png" alt="Automated Finance Workbook" class="project-preview-image" />
+              <i class="fas fa-chevron-down accordion-arrow"></i>
+            </div>
+            <div class="accordion-content">
+              <p data-en="Excel file with macros for bookkeeping, automatic report generation, and usage tutorials for student association. Features automated calculations, data validation, financial reporting templates, and user-friendly interfaces for non-technical users." 
+                 data-fr="Fichier Excel avec macros pour la comptabilité, génération de rapports automatiques et tutoriels d'utilisation. Comprend des calculs automatisés, la validation des données, des modèles de rapports financiers et des interfaces conviviales pour les utilisateurs non techniques.">
+                Excel file with macros for bookkeeping, automatic report generation, and usage tutorials for student association. Features automated calculations, data validation, financial reporting templates, and user-friendly interfaces for non-technical users.
+              </p>
+              
+              <div class="gallery-container" data-folder="projects/finances" data-prefix="" data-count="4" data-extension="png">
+                <div class="gallery-track"></div>
+              </div>
+              
+              <div class="project-actions">
+                <a href="#" class="action-btn">
+                  <i class="fas fa-download"></i>
+                  <span data-en="Download Template" data-fr="Télécharger le Modèle">Download Template</span>
+                </a>
+                <a href="#" class="action-btn">
+                  <i class="fas fa-book"></i>
+                  <span data-en="User Guide" data-fr="Guide d'Utilisation">User Guide</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medical Consultation Dashboard -->
+          <div class="accordion-item" data-category="tools">
+            <div class="accordion-header">
+              <i class="fas fa-chart-bar"></i>
+              <div class="project-title-section">
+                <h3 data-en="Medical Consultation Dashboard" data-fr="Tableau de consultations médicales">Medical Consultation Dashboard</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">Excel</span>
+                  <span class="tech-tag">Macros</span>
+                  <span class="tech-tag">Healthcare</span>
+                  <span class="tech-tag">Data Analysis</span>
+                </div>
+              </div>
+              <img src="./assets/img/projects/ro/1.png" alt="Medical Consultation Dashboard" class="project-preview-image" />
+              <i class="fas fa-chevron-down accordion-arrow"></i>
+            </div>
+            <div class="accordion-content">
+              <p data-en="Excel tool with macros for tracking consultations and statistics in oncology. Recognized with Stars Award in healthcare. Features comprehensive data analysis, automated reporting, statistical visualization, and quality metrics tracking for healthcare operations." 
+                 data-fr="Outil Excel avec macros pour suivre les consultations et statistiques en radio-oncologie. Prix Stars du réseau santé. Comprend une analyse complète des données, des rapports automatisés, une visualisation statistique et un suivi des métriques de qualité pour les opérations de soins de santé.">
+                Excel tool with macros for tracking consultations and statistics in oncology. Recognized with Stars Award in healthcare. Features comprehensive data analysis, automated reporting, statistical visualization, and quality metrics tracking for healthcare operations.
+              </p>
+              
+              <div class="gallery-container" data-folder="projects/ro" data-prefix="" data-count="3" data-extension="png">
+                <div class="gallery-track"></div>
+              </div>
+              
+              <div class="project-actions">
+                <a href="#" class="action-btn">
+                  <i class="fas fa-award"></i>
+                  <span data-en="Stars Award" data-fr="Prix Stars">Stars Award</span>
+                </a>
+                <a href="#" class="action-btn">
+                  <i class="fas fa-file-pdf"></i>
+                  <span data-en="Case Study" data-fr="Étude de Cas">Case Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="hero">
+      <div class="container">
+        <h1 data-en="Experience" data-fr="Expérience">Experience</h1>
+        <h2 data-en="Professional Journey" data-fr="Parcours Professionnel">Professional Journey</h2>
+        <p data-en="My professional experience and career milestones." data-fr="Mon expérience professionnelle et mes étapes de carrière.">My professional experience and career milestones.</p>
+        
+        <div class="experience-timeline">
+          
+          <!-- UQTR Internship -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span data-en="May 2025 – Present" data-fr="Mai 2025 – Aujourd’hui">May 2025 – Present</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 data-en="Engineering Intern" data-fr="Stagiaire en ingénierie">Engineering Intern</h3>
+                <h4 data-en="Université du Québec à Trois-Rivières (UQTR)" data-fr="Université du Québec à Trois-Rivières (UQTR)">Université du Québec à Trois-Rivières (UQTR)</h4>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Trois-Rivières, QC</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li data-en="Ongoing internship as part of an engineering training program" data-fr="Stage en cours dans le cadre d’un programme de formation en ingénierie">Ongoing internship as part of an engineering training program</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CIUSSS -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span data-en="Aug. 2023 – Present" data-fr="Août 2023 – Aujourd’hui">Aug. 2023 – Present</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 data-en="Administrative Officer" data-fr="Agent administratif">Administrative Officer</h3>
+                <h4 data-en="CIUSSS MCQ (On-call)" data-fr="CIUSSS MCQ (Sur appel)">CIUSSS MCQ (On-call)</h4>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Trois-Rivières, QC</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li data-en="Handled consultation requests and managed patient records in oncology" data-fr="Géré les demandes de consultations et les dossiers patients en radio-oncologie">Handled consultation requests and managed patient records in oncology</li>
+                <li data-en="Scheduled medical appointments and managed follow-up of test results" data-fr="Organisé les rendez-vous médicaux et assuré le suivi des résultats d’examens">Scheduled medical appointments and managed follow-up of test results</li>
+                <li data-en="Designed VBA tools to optimize administrative workflows during low-activity periods" data-fr="Développé des outils VBA pour optimiser les processus administratifs en périodes calmes">Designed VBA tools to optimize administrative workflows during low-activity periods</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="skill-chip">VBA</span>
+                <span class="skill-chip">Organization</span>
+                <span class="skill-chip">Administrative Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Volleyball Coach -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span data-en="Sept. 2023 – May 2024" data-fr="Sept. 2023 – Mai 2024">Sept. 2023 – May 2024</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 data-en="Volleyball Coach" data-fr="Entraîneur de volleyball">Volleyball Coach</h3>
+                <h4 data-en="Académie Les Estacades" data-fr="Académie Les Estacades">Académie Les Estacades</h4>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Trois-Rivières, QC</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li data-en="Trained and mentored youth athletes in team performance and discipline" data-fr="Encadré des athlètes de niveau secondaire en performance et discipline d’équipe">Trained and mentored youth athletes in team performance and discipline</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="skill-chip">Team Leadership</span>
+                <span class="skill-chip">Coaching</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tim Hortons -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span data-en="July 2019 – June 2023" data-fr="Juil. 2019 – Juin 2023">July 2019 – June 2023</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 data-en="Assistant Manager" data-fr="Assistant gérant">Assistant Manager</h3>
+                <h4 data-en="Tim Hortons" data-fr="Tim Hortons">Tim Hortons</h4>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Saint-Jérôme, QC</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li data-en="Led store operations and supervised a team in a fast-paced environment" data-fr="Dirigé les opérations et supervisé une équipe dans un environnement dynamique">Led store operations and supervised a team in a fast-paced environment</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="skill-chip">Team Management</span>
+                <span class="skill-chip">Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cégep Saint-Jérôme -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span data-en="Mar. 2020 – May 2023" data-fr="Mars 2020 – Mai 2023">Mar. 2020 – May 2023</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 data-en="General Labourer" data-fr="Manœuvre">General Labourer</h3>
+                <h4 data-en="Cégep de Saint-Jérôme" data-fr="Cégep de Saint-Jérôme">Cégep de Saint-Jérôme</h4>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Saint-Jérôme, QC</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li data-en="Performed various maintenance and logistical tasks" data-fr="Effectué diverses tâches de maintenance et logistique">Performed various maintenance and logistical tasks</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="skill-chip">Teamwork</span>
+                <span class="skill-chip">Autonomy</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="hero">
+      <div class="container">
+        <h1 data-en="Education" data-fr="Éducation">Education</h1>
+        <h2 data-en="Academic Background" data-fr="Parcours Académique">Academic Background</h2>
+        <p data-en="My educational journey and academic achievements." data-fr="Mon parcours éducatif et mes réalisations académiques.">My educational journey and academic achievements.</p>
+        
+        <div class="education-grid">
+          
+          <!-- UQTR -->
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-info">
+                <h3 data-en="Bachelor's in Computer Engineering" data-fr="Baccalauréat en Génie Informatique">Bachelor's in Computer Engineering</h3>
+                <h4 data-en="Université du Québec à Trois-Rivières (UQTR)" data-fr="Université du Québec à Trois-Rivières (UQTR)">Université du Québec à Trois-Rivières (UQTR)</h4>
+                <span class="date" data-en="2023 - 2027" data-fr="2023 - 2027">2023 - 2027</span>
+              </div>
+            </div>
+            <div class="education-details">
+              <h5 data-en="Relevant Topics:" data-fr="Domaines Pertinents :">Relevant Topics:</h5>
+              <div class="courses">
+                <span class="course-tag">Shell Scripting</span>
+                <span class="course-tag">C Programming</span>
+                <span class="course-tag">System Design</span>
+                <span class="course-tag">Embedded Systems</span>
+              </div>
+              <h5 data-en="Activities:" data-fr="Activités :">Activities:</h5>
+              <ul class="achievements">
+                <li data-en="Participated in CS Games and academic competitions" data-fr="Participation aux CS Games et compétitions académiques">Participated in CS Games and academic competitions</li>
+                <li data-en="Member of Engineering Student Community" data-fr="Membre de la communauté étudiante en ingénierie">Member of Engineering Student Community</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Cégep de Saint-Jérôme -->
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="education-info">
+                <h3 data-en="DEC in Computer Science & Mathematics" data-fr="DEC en Sciences Informatiques et Mathématiques">DEC in Computer Science & Mathematics</h3>
+                <h4 data-en="Cégep de Saint-Jérôme" data-fr="Cégep de Saint-Jérôme">Cégep de Saint-Jérôme</h4>
+                <span class="date" data-en="2019 - 2023" data-fr="2019 - 2023">2019 - 2023</span>
+              </div>
+            </div>
+            <div class="education-details">
+              <h5 data-en="Relevant Topics:" data-fr="Domaines Pertinents :">Relevant Topics:</h5>
+              <div class="courses">
+                <span class="course-tag">Object-Oriented Programming (OOP)</span>
+                <span class="course-tag">C++</span>
+                <span class="course-tag">Discrete Mathematics</span>
+                <span class="course-tag">Calculus & Linear Algebra</span>
+              </div>
+              <h5 data-en="Achievements:" data-fr="Réalisations :">Achievements:</h5>
+              <ul class="achievements">
+                <li data-en="Completed a 4-year technical DEC while working part-time" data-fr="DEC technique complété en parallèle d’un emploi à temps partiel">Completed a 4-year technical DEC while working part-time</li>
+                <li data-en="Contributed to programming projects and peer tutoring" data-fr="Participation à des projets de programmation et tutorat entre pairs">Contributed to programming projects and peer tutoring</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitions & Involvement Section -->
+    <section id="competitions" class="hero">
+      <div class="container">
+        <h1 data-en="Competitions & Involvement" data-fr="Compétitions & Implications">Competitions & Involvement</h1>
+        <h2 data-en="Beyond the Classroom" data-fr="Au-delà de la Salle de Classe">Beyond the Classroom</h2>
+        <p data-en="My participation in competitions, extracurricular activities, and community involvement." data-fr="Ma participation aux compétitions, activités parascolaires et implication communautaire.">My participation in competitions, extracurricular activities, and community involvement.</p>
+        
+        <div class="involvement-tabs">
+          <button class="tab-btn active" data-tab="competitions">
+            <i class="fas fa-trophy"></i>
+            <span data-en="Competitions" data-fr="Compétitions">Competitions</span>
+          </button>
+          <button class="tab-btn" data-tab="volunteer">
+            <i class="fas fa-hands-helping"></i>
+            <span data-en="Volunteer Work" data-fr="Implication">Volunteer Work</span>
+          </button>
+          <button class="tab-btn" data-tab="organizations">
+            <i class="fas fa-users"></i>
+            <span data-en="Organizations" data-fr="Organisations">Organizations</span>
+          </button>
+        </div>
+
+        <div class="involvement-content">
+          
+          <!-- COMPETITIONS -->
+          <div class="involvement-tab active" id="competitions">
+            <div class="involvement-grid">
+              <div class="involvement-card">
+                <div class="involvement-icon"><i class="fas fa-code"></i></div>
+                <div class="involvement-info">
+                  <h3 data-en="CS Games" data-fr="CS Games">CS Games</h3>
+                  <span class="date" data-en="2025" data-fr="2025">2025</span>
+                  <span class="achievement" data-en="Team Leader - Trois-Rivières Delegation" data-fr="Chef d'équipe - Délégation Trois-Rivières">Team Leader - Trois-Rivières Delegation</span>
+                  <p data-en="Led the Trois-Rivières delegation and competed in programming and security challenges." data-fr="Chef de la délégation de Trois-Rivières et participation aux épreuves de programmation et de sécurité.">Led the Trois-Rivières delegation and competed in programming and security challenges.</p>
+                </div>
+              </div>
+
+              <div class="involvement-card">
+                <div class="involvement-icon"><i class="fas fa-microchip"></i></div>
+                <div class="involvement-info">
+                  <h3 data-en="Quebec Engineering Competition (CQI)" data-fr="Compétition Québécoise en Ingénierie (CQI)">Quebec Engineering Competition (CQI)</h3>
+                  <span class="date" data-en="2025" data-fr="2025">2025</span>
+                  <span class="achievement" data-en="Programming Team" data-fr="Équipe Programmation">Programming Team</span>
+                  <p data-en="Represented UQTR in the programming challenge at CQI." data-fr="Représenté l'UQTR à la compétition de programmation à la CQI.">Represented UQTR in the programming challenge at CQI.</p>
+                </div>
+              </div>
+
+              <div class="involvement-card">
+                <div class="involvement-icon"><i class="fas fa-cogs"></i></div>
+                <div class="involvement-info">
+                  <h3 data-en="Engineering Games" data-fr="Jeux de Génie">Engineering Games</h3>
+                  <span class="date" data-en="2025" data-fr="2025">2025</span>
+                  <span class="achievement" data-en="Co-VP Machine & Participant" data-fr="Co-VP Machine & Participant">Co-VP Machine & Participant</span>
+                  <p data-en="Helped coordinate the machine competition and represented UQTR as a participant." data-fr="Coordination de la compétition machine et participation pour représenter l'UQTR.">Helped coordinate the machine competition and represented UQTR as a participant.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VOLUNTEER WORK / IMPLICATION -->
+          <div class="involvement-tab" id="volunteer">
+            <div class="involvement-grid">
+              <div class="involvement-card">
+                <div class="involvement-icon"><i class="fas fa-coins"></i></div>
+                <div class="involvement-info">
+                  <h3 data-en="Treasurer - GÉGI/IEEE" data-fr="Trésorier - GÉGI/IEEE">Treasurer - GÉGI/IEEE</h3>
+                  <span class="date" data-en="2024 - 2025" data-fr="2024 - 2025">2024 - 2025</span>
+                  <span class="achievement" data-en="Budget & Finance Management" data-fr="Gestion des Finances">Budget & Finance Management</span>
+                  <p data-en="Managed the budget and handled financial operations for the student association." data-fr="Gestion du budget et des opérations financières de l'association étudiante.">Managed the budget and handled financial operations for the student association.</p>
+                </div>
+              </div>
+
+              <div class="involvement-card">
+                <div class="involvement-icon"><i class="fas fa-user-tie"></i></div>
+                <div class="involvement-info">
+                  <h3 data-en="President - GÉGI/IEEE" data-fr="Président - GÉGI/IEEE">President - GÉGI/IEEE</h3>
+                  <span class="date" data-en="2025 - 2026" data-fr="2025 - 2026">2025 - 2026</span>
+                  <span class="achievement" data-en="Leadership & Representation" data-fr="Leadership & Représentation">Leadership & Representation</span>
+                  <p data-en="Represented the student body and oversaw academic and social initiatives." data-fr="Représenté les étudiants et supervisé les initiatives académiques et sociales.">Represented the student body and oversaw academic and social initiatives.</p>
+                </div>
+              </div>
+
+              <div class="involvement-card">
+                <div class="involvement-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="involvement-info">
+                  <h3 data-en="Tech Director - CDDI/CSE 2026" data-fr="Directeur aux Technologies - CDDI/CSE 2026">Tech Director - CDDI/CSE 2026</h3>
+                  <span class="date" data-en="2025 - 2026" data-fr="2025 - 2026">2025 - 2026</span>
+                  <span class="achievement" data-en="Website & Platform Management" data-fr="Gestion des Plateformes Web">Website & Platform Management</span>
+                  <p data-en="Managed the website and internal digital tools for the organizing committee." data-fr="Gestion du site web et des outils numériques pour le comité organisateur.">Managed the website and internal digital tools for the organizing committee.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ORGANIZATIONS -->
+          <div class="involvement-tab" id="organizations">
+            <div class="involvement-grid">
+              <div class="involvement-card">
+                <div class="involvement-icon"><i class="fas fa-users-cog"></i></div>
+                <div class="involvement-info">
+                  <h3 data-en="GÉGI/IEEE Student Association" data-fr="Association Étudiante GÉGI/IEEE">GÉGI/IEEE Student Association</h3>
+                  <span class="date" data-en="2022 - Present" data-fr="2022 - Présent">2022 - Present</span>
+                  <span class="achievement" data-en="Executive Committee" data-fr="Comité Exécutif">Executive Committee</span>
+                  <p data-en="Active member involved in planning academic, social, and industry events." data-fr="Membre actif impliqué dans la planification d’événements académiques, sociaux et industriels.">Active member involved in planning academic, social, and industry events.</p>
+                </div>
+              </div>
+
+              <div class="involvement-card">
+                <div class="involvement-icon"><i class="fas fa-calendar-alt"></i></div>
+                <div class="involvement-info">
+                  <h3 data-en="CDDI/CSE 2026 Organizing Committee" data-fr="Comité Organisateur CDDI/CSE 2026">CDDI/CSE 2026 Organizing Committee</h3>
+                  <span class="date" data-en="2025 - 2026" data-fr="2025 - 2026">2025 - 2026</span>
+                  <span class="achievement" data-en="Tech & Logistics Lead" data-fr="Responsable Technique & Logistique">Tech & Logistics Lead</span>
+                  <p data-en="Organized and led the technical coordination of the event." data-fr="Organisation et coordination technique de l’événement.">Organized and led the technical coordination of the event.</p>
+                </div>
+              </div>
+
+              <div class="involvement-card">
+                <div class="involvement-icon"><i class="fas fa-globe"></i></div>
+                <div class="involvement-info">
+                  <h3 data-en="ITR Council" data-fr="Conseil ITR">ITR Council</h3>
+                  <span class="date" data-en="2025 - 2026" data-fr="2025 - 2026">2025 - 2026</span>
+                  <span class="achievement" data-en="Representative of GÉGI" data-fr="Représentant du GÉGI">Representative of GÉGI</span>
+                  <p data-en="Represented the engineering department on the ITR board as GÉGI president." data-fr="Représenté le génie informatique au conseil d'administration d'ITR en tant que président du GÉGI.">Represented the engineering department on the ITR board as GÉGI president.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="hero">
+      <div class="container">
+        <h1 data-en="Interests" data-fr="Intérêts">Interests</h1>
+        <h2 data-en="Beyond Engineering" data-fr="Au-delà de l’ingénierie">Beyond Engineering</h2>
+        <p data-en="What fuels my creativity and keeps me grounded outside the technical world." data-fr="Ce qui nourrit ma créativité et m’ancre en dehors du monde technique.">What fuels my creativity and keeps me grounded outside the technical world.</p>
+        
+        <div class="interests-grid">
+
+          <!-- Music Recording -->
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-headphones-alt"></i>
+            </div>
+            <div class="interest-content">
+              <h3 data-en="Music Recording & Production" data-fr="Enregistrement & Production Musicale">Music Recording & Production</h3>
+              <p data-en="Multi-instrumentalist passionate about creating music. Produced a full cover album solo in high school, from recording to audio editing." data-fr="Multi-instrumentiste passionné de création musicale. J’ai produit un album complet de reprises au secondaire, de l’enregistrement au montage audio.">Multi-instrumentalist passionate about creating music. Produced a full cover album solo in high school, from recording to audio editing.</p>
+              <div class="interest-tags">
+                <span class="tag">Guitar</span>
+                <span class="tag">Piano</span>
+                <span class="tag">Drums</span>
+                <span class="tag">Mixing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Volleyball -->
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-volleyball-ball"></i>
+            </div>
+            <div class="interest-content">
+              <h3 data-en="Volleyball" data-fr="Volleyball">Volleyball</h3>
+              <p data-en="Played for a collegiate team for four years. Still passionate about teamwork, strategy, and keeping the ball in the air." data-fr="J’ai joué pour une équipe collégiale pendant quatre ans. Toujours passionné par l’esprit d’équipe, la stratégie et les passes parfaites.">Played for a collegiate team for four years. Still passionate about teamwork, strategy, and keeping the ball in the air.</p>
+              <div class="interest-tags">
+                <span class="tag">Team Sports</span>
+                <span class="tag">Agility</span>
+                <span class="tag">Strategy</span>
+                <span class="tag">Coaching</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Electronics & Robotics -->
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="interest-content">
+              <h3 data-en="Electronics & Robotics" data-fr="Électronique & Robotique">Electronics & Robotics</h3>
+              <p data-en="From tinkering with microcontrollers to building embedded systems, I see engineering as both a career and a hobby." data-fr="Qu’il s’agisse de microcontrôleurs ou de systèmes embarqués, je vois l’ingénierie comme une carrière autant qu’un loisir.">From tinkering with microcontrollers to building embedded systems, I see engineering as both a career and a hobby.</p>
+              <div class="interest-tags">
+                <span class="tag">Arduino</span>
+                <span class="tag">STM32</span>
+                <span class="tag">PCB Design</span>
+                <span class="tag">DIY</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Games -->
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="interest-content">
+              <h3 data-en="Video Games" data-fr="Jeux Vidéo">Video Games</h3>
+              <p data-en="Enjoy relaxing and creative games like Minecraft, Pokémon, and PC Building Simulator. It’s about fun, design, and exploration." data-fr="J’aime les jeux relaxants et créatifs comme Minecraft, Pokémon ou PC Building Simulator. Un mélange de plaisir, design et exploration.">Enjoy relaxing and creative games like Minecraft, Pokémon, and PC Building Simulator. It’s about fun, design, and exploration.</p>
+              <div class="interest-tags">
+                <span class="tag">Minecraft</span>
+                <span class="tag">Pokémon</span>
+                <span class="tag">Simulation</span>
+                <span class="tag">Creativity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fun Facts -->
+        <div class="fun-facts">
+          <h2 data-en="Fun Facts About Me" data-fr="Faits amusants sur moi">Fun Facts About Me</h2>
+          <div class="facts-grid">
+            <div class="fact-item">
+              <i class="fas fa-user-clock"></i>
+              <span data-en="Youngest team supervisor at age 15 (and still the most reliable)" data-fr="Plus jeune superviseur à 15 ans (et toujours le plus fiable)">Youngest team supervisor at age 15 (and still the most reliable)</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-code"></i>
+              <span data-en="Lines of code written: 50,000+" data-fr="Lignes de code écrites : 50 000+">Lines of code written: 50,000+</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-trophy"></i>
+              <span data-en="Podium finishes at provincial figure skating finals: 2" data-fr="Podiums aux finales provinciales de patinage artistique : 2">Podium finishes at provincial figure skating finals: 2</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-microchip"></i>
+              <span data-en="Custom PCBs assembled: ~12" data-fr="PCB personnalisés assemblés : ~12">Custom PCBs assembled: ~12</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-calendar-check"></i>
+              <span data-en="Never missed a deadline during my internships" data-fr="Jamais manqué une échéance pendant mes stages">Never missed a deadline during my internships</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-bug"></i>
+              <span data-en="Bugs fixed: Countless" data-fr="Bugs corrigés : Innombrables">Bugs fixed: Countless</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-award"></i>
+              <span data-en="Academic performance awards received: 10+" data-fr="Prix de performance académique obtenus : 10+">Academic performance awards received: 10+</span>
+            </div>
+            <div class="fact-item">
+              <i class="fas fa-home"></i>
+              <span data-en="Became landlord at 21 years old" data-fr="Devenu propriétaire à 21 ans">Became landlord at 21 years old</span>
+            </div>
+          </div>
+        </div>
+            </div>
+          </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1 data-en="Get In Touch" data-fr="Contactez-moi">Get In Touch</h1>
+        <h2 data-en="Let's Work Together" data-fr="Travaillons Ensemble">Let's Work Together</h2>
+        <p data-en="I'm always open to discussing new opportunities and interesting projects." data-fr="Je suis toujours ouvert à discuter de nouvelles opportunités et de projets intéressants.">I'm always open to discussing new opportunities and interesting projects.</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h3 data-en="Email" data-fr="Courriel">Email</h3>
+            <p>sebastien.cabana@uqtr.ca</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <h3 data-en="Phone" data-fr="Téléphone">Phone</h3>
+            <p>+1 (514) 883-8805</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3 data-en="Location" data-fr="Localisation">Location</h3>
+            <p data-en="Trois-Rivières, QC, Canada" data-fr="Trois-Rivières, QC, Canada">Trois-Rivières, QC, Canada</p>
+          </div>
+      </div>
+
+      <form action="https://formspree.io/f/myzjrogl" method="POST" class="contact-form" id="contactForm">
+        <!-- Honeypot field (fully hidden) -->
+        <div class="hidden-field" aria-hidden="true">
+          <label for="honey">Do not fill this field</label>
+          <input type="text" name="_honey" id="honey" tabindex="-1" autocomplete="off">
+        </div>
+
+        <!-- Name and Email side-by-side -->
+        <div class="contact-row">
+          <div class="contact-half form-group">
+            <label for="name" data-en="Name" data-fr="Nom"></label>
+            <input type="text" id="name" name="name" required placeholder="Your Name / Votre nom">
+          </div>
+          <div class="contact-half form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message" data-en="Message" data-fr="Message"></label>
+          <textarea id="message" name="message" required placeholder="Your message / Votre message"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div class="form-button-center">
+          <button type="submit" class="btn" data-en="Send Message" data-fr="Envoyer le message"></button>
+        </div>
+      </form>
+
+      <!-- Success message (hidden by default) -->
+      <div id="success-message">
+        <div class="success-content">
+          <i class="fas fa-check-circle"></i>
+          <h2 data-en="Thank You!" data-fr="Merci !"></h2>
+          <p data-en="We've received your message and will get back to you soon." 
+             data-fr="Nous avons reçu votre message et vous répondrons bientôt."></p>
+        </div>
+      </div>
+      <!-- Error message (hidden by default) -->
+      <div id="error-message">
+        <div class="success-content">
+          <i class="fas fa-times-circle"></i>
+          <h2 data-en="Oops!" data-fr="Oups !"></h2>
+          <p data-en="There was a problem sending your message. Please try again later."
+             data-fr="Un problème est survenu lors de l’envoi de votre message. Veuillez réessayer plus tard."></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="footer-content">
