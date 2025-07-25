@@ -115,6 +115,11 @@ header {
   margin: 0;
   padding: 0;
   justify-content: flex-start;
+  align-items: stretch;
+}
+
+.main-nav li {
+  display: flex;
 }
 
 .main-nav a {
@@ -122,13 +127,16 @@ header {
   font-family: var(--subtitle-font);
   font-weight: 600;
   padding: 1rem 1rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   text-align: center;
   margin-right: 0;
   min-width: 120px;
   box-sizing: border-box;
   transition: color 0.3s ease;
+  flex: 1;
 }
 
 .main-nav a.current,
