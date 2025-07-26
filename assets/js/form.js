@@ -36,7 +36,7 @@
           }, 1000); */
 
           // Uncomment below for real submission
-          fetch('https://formspree.io/f/xqabworl', {
+          fetch('https://formspree.io/f/myzjrogl', {
             method: 'POST',
             body: formData,
             headers: {
