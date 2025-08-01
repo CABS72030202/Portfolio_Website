@@ -86,6 +86,10 @@
   opacity: 0;
 }
 
+.accordion-content p {
+  text-align: justify;
+}
+
 .accordion-item.active .accordion-content {
   max-height: 2000px;
   padding: 2rem;
